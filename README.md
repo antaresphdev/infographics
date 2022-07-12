@@ -1,4 +1,4 @@
-# Infographics
+# Antares Programming Infographics
 Infographics we posted everywhere, mainly on our [Facebook page](https://facebook.com/antaresprogramming).
 
 ## Which infographics are here?
