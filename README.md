@@ -12,7 +12,7 @@ We'll strive to include everything we posted since the beginning of Antares Prog
 Yes. These infographics are free to download and share with others on the condition that they are distributed **for free** and that the Antares Programming logo and name won't be erased, edited out, or manipulated. It would also be very appreciated if you credit us by linking back to our Facebook page or our official website [antaresph.dev](https://antaresph.dev/)
 
 ## I want to contribute to this project.
-Thank you! Right now, Antares Programming has no system in place for contributions. But we are very happy to talk to you! Send us an email at [info@antaresph.dev].
+Thank you! Right now, Antares Programming has no system in place for contributions. But we are very happy to talk to you! Send us an email at [info@antaresph.dev](mailto:info@antaresph.dev).
 
 ## Support us!
 
