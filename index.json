@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Aspect Ratio: Hindi na lang para sa images",
+    "path": "aspect-ratio",
+    "slides": [
+      {
+        "path": "aspect-ratio.png",
+        "height": "1260",
+        "width": "2400",
+        "code": "https://gist.github.com/teacherbuknoy/0caf52c96f31aae3185e540733dd00ef",
+        "html": "<p>Puwede nating i-specify ang gusto nating aspect ratio ng isang element. Ang aspect ratio ay ang ratio ng width at height ng isang element. ibig sabihin, kahit width lang ang i-specify natin, automatic na kino-compute ng browser ang height, and vice-versa.</p><p>May automatic na aspect ratio ang mga image, at ito ang dahilan kung bakit nasi-stretch sila kapag ag-specify tayo ng height at width nang sabay. Sa ilang kaso, gusto nating bigyan ng aspect ratio ang ibang mga component gaya ng cards, YouTube embeds, at mga div na para sa aesthetics. Puwede na natin itong gawin ngayon sa CSS.</p>",
+        "text": "Puwede nating i-specify ang gusto nating aspect ratio ng isang element. Ang aspect ratio ay ang ratio ng width at height ng isang element. ibig sabihin, kahit width lang ang i-specify natin, automatic na kino-compute ng browser ang height, and vice-versa.\n\nMay automatic na aspect ratio ang mga image, at ito ang dahilan kung bakit nasi-stretch sila kapag ag-specify tayo ng height at width nang sabay. Sa ilang kaso, gusto nating bigyan ng aspect ratio ang ibang mga component gaya ng cards, YouTube embeds, at mga div na para sa aesthetics. Puwede na natin itong gawin ngayon sa CSS."
+      }
+    ]
+  },
+  {
+  "title": "Custom Properties (a.k.a. CSS Variables)",
+  "path": "custom-property",
+  "tags": ["css"],
+  "slides": [
+    {
+    "path": "custom-property.png",
+    "width": "2400",
+    "height": "1260",
+    "alt": "CSS custom properties or variables are declared by assigning any valid CSS value to a variable name that is prefixed by two dashes. This assignment is very much like setting any other CSS property. To use the variable, pass it as an argument to the var() function that sets the value to your desired CSS property.",
+    "code": null,
+    "html": "<p><strong>Variable name: <code>--variable-name</code></strong></p><ul>  <li>Required double dash prefix</li>  <li>Dashes and underscores are allowed</li></ul><p><strong>Value:</strong> any valid CSS value</p><p><strong>Usage:</strong> <code>var(--fg-color)</code></p><ul>  <li>Use the variable as value in a CSS declaration</li>  <li>Extract value from the variable using the <code>var()</code> function.</li></ul>",
+    "text": "Variable name: --variable-name\n- Required double dash prefix\n- Dashes and underscores are allowed\n\nValue: any valid CSS value\n\nUsage: var(--fg-color)\n- Use the variable as value in a CSS declaration\n- Extract value from the variable using the var() function.\n"
+    }
+  ]
+  },
+  {
+  "title": "Huwag i-disable ang buttons!",
+  "path": "disabled-buttons",
+  "tags": ["html", "accessibility"],
+  "slides": [
+    {
+    "path": "disabled-buttons.png",
+    "width": "4800",
+    "height": "2520",
+    "code": null,
+    "html": "<h1>Huwag i-disable ang buttons!</h1><h2>Bakit hindi dapat?</h2><ul>  <li>Hindi malalaman ng user kung bakit disabled ang button</li>  <li>Hindi maa-access ng keyboard (via Tab key) ang button dahil hindi ito focusable kapag naka-disable ito sa HTML</li>  <li>Mababang contrast by default</li></ul><h2>Ano ang dapat gawin?</h2><ul>  <li>Gamitin ang <code>aria-disabled</code> attribute sa HTML para malaman ng assistive technologies na disabled ang button.</li>  <li>Magbigay ng hint sa user kung bakit hindi pa puwedeng i-perform ang action.</li>  <li>Dahil pinalitan natin ng <code>aria-disabled</code> ang <code>disabled</code> attribute, focusable pa rin ang button at mararating ito gamit ang <kbd>Tab</kbd> key</li></ul><p>Sa JavaScript, gawing <code>true</code> ang <code>aria-disabled</code> para ipaalam sa browser na hindi dapat gagana ang action.</p>",
+    "text": "Huwag i-disable ang buttons!\nBakit hindi dapat?\n\n  Hindi malalaman ng user kung bakit disabled ang button\n  Hindi maa-access ng keyboard (via Tab key) ang button dahil hindi ito focusable kapag naka-disable ito sa HTML\n  Mababang contrast by default\n\n\nAno ang dapat gawin?\n\n  Gamitin ang aria-disabled attribute sa HTML para malaman ng assistive technologies na disabled ang button.\n  Magbigay ng hint sa user kung bakit hindi pa puwedeng i-perform ang action.\n  Dahil pinalitan natin ng aria-disabled ang disabled attribute, focusable pa rin ang button at mararating ito gamit ang Tab key\n\n\nSa JavaScript, gawing true ang aria-disabled para ipaalam sa browser na hindi dapat gagana ang action."
+    }
+  ]
+  },{
+  "title": "Gumamit ng Feature Queries!",
+  "path": "feature-queries",
+  "tags": ["css"],
+  "slides": [
+    {
+    "path": "feature-queries.png",
+    "width": "2400",
+    "height": "1260",
+    "code": "https://gist.github.com/teacherbuknoy/416625c176a667a6c0edf5dc36259534",
+    "html": "<h1>Gumamit ng Feature Queries!</h1><p>Gusto mo bang gumamit ng bagong feature sa CSS pero hindi pa ito available sa lahat ng browsers?</p><h2>Default Style</h2><p>Para sa mga browsers na hindi pa supported ang feature na gusto mong gamitin.</p><h2>Feature Query</h2><p>Kagaya ng media queries, pero feature support ang tinitingnan nito, hindi size ng viewport.</p><h2>Bagong CSS Feature</h2><p>Titingnan ng feature query kung supported ba ng browser ang feature na ito.</p><h2>Styles para sa mga browser na may support</h2><p>Kung supported ng browser ang bagong feature, ia-apply nito ang styling. Kung hindi, ini-ignore ito ng browser</p>",
+    "text": "Gumamit ng Feature Queries!\nGusto mo bang gumamit ng bagong feature sa CSS pero hindi pa ito available sa lahat ng browsers?\n\nDefault Style\nPara sa mga browsers na hindi pa supported ang feature na gusto mong gamitin.\n\nFeature Query\nKagaya ng media queries, pero feature support ang tinitingnan nito, hindi size ng viewport.\n\nBagong CSS Feature\nTitingnan ng feature query kung supported ba ng browser ang feature na ito.\n\nStyles para sa mga browser na may support\nKung supported ng browser ang bagong feature, ia-apply nito ang styling. Kung hindi, ini-ignore ito ng browser",
+    "alt": ""
+    }
+  ]
+  }
+]
