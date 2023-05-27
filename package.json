@@ -4,6 +4,7 @@
   "description": "Infographics we posted everywhere, mainly on our Facebook page.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/antaresphdev/infographics/issues"
   },
-  "homepage": "https://github.com/antaresphdev/infographics#readme"
+  "homepage": "https://github.com/antaresphdev/infographics#readme",
+  "dependencies": {
+    "image-size": "^1.0.2",
+    "yaml": "^2.3.1"
+  }
 }
